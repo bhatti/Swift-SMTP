@@ -5,7 +5,9 @@ Pod::Spec.new do |s|
   s.homepage       = 'https://github.com/bhatti/Swift-SMTP'
   s.license        = { type: 'Apache', file: 'LICENSE.txt' }
   s.author         = { 'IBM-Swift' => 'qvo1987@gmail.com' }
-  s.source         = { http: "https://github.com/bhatti/Swift-SMTP/archive/5.1.2.zip" }
+  s.source              = { git: s.homepage + '.git', tag: s.version }
+  s.source_files        = 'Sources/**/*.swift'
+  s.swift_versions      = ['5.0', '5.1']
   s.preserve_paths = '*'
   s.exclude_files  = '**/file.zip'
 end
