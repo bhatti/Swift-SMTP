@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5.0', '5.1']
   s.preserve_paths = '*'
   s.exclude_files  = '**/file.zip'
-  s.dependency     'BlueSSLService', :git => 'https://github.com/IBM-Swift/BlueSSLService'
-  s.dependency     'BlueCryptor', :git => 'https://github.com/IBM-Swift/BlueCryptor'
-  s.dependency     'LoggerAPI', :git => 'https://github.com/IBM-Swift/LoggerAPI'
-  s.dependency     'BlueSocket', :git => 'https://github.com/IBM-Swift/BlueSocket'
+  s.dependency     'BlueSSLService'
+  s.dependency     'BlueCryptor'
+  s.dependency     'LoggerAPI'
+  s.dependency     'BlueSocket'
 end
